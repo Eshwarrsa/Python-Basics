@@ -21,6 +21,7 @@
 |**2.**|Attribute in a self changes object to object of the same class.|Attribute in cls will not change according to object to object in same class.|
 |**3.**|self is mandatory parameter for instance attribute and method.|cls is mandatory parameter for the class attribute and method.|
 
+# **Advance Topic**
 # Decorators:
 &nbsp; Decorators are the function which give extra functionality to other function. The decorators can be used by by `@identifier`. To create a decorators we should follow some protocol. They are:
 * The decorator function should have a mandatory argument. 
@@ -47,3 +48,18 @@ def func():
 3. It takes the address of the function as arguments and return the address of inner function. 
 4. At the `args` we have the address of `func`. At the place of `func` we have `inner` function address. 
 5. Whenever we call `func` we will be executing inner function which adds the extra functionality. 
+
+# Genrators:
+&nbsp; Generators are the iterables like list and tuple unlike they don't store all data at once. It gives the result during the runtime. By using `yeild` keyword we can convert a normal function into a generators. By using generators we can avoid of storing large dataset instead we can fetch one by one on fly which improves the memory management. For Example:
+```py
+def square(num):
+    for i in range(num):
+        yield i * i
+```
+## Difference between function and generator:
+|**S.No**|**Function**|**Generator**|
+|--------|------------|-------------|
+|**1.**|The regular function are the function which will be executed once whenever it is called.|Generators are the function which iters the value in fly.|
+|**2.**|It returns whole collection data type at once. |It iters the value one by one and return it|
+|**3.**|It occupies more memory| It occupies very less memory|
+|**4.**|`return` keyword is used to written the function whereever it is called. |`yield` will not return the control flow fully to program instead it iter the value one by one.|

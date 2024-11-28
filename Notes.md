@@ -1,10 +1,19 @@
-# **Operators:**
+# **Basic Topics**
+# Operators:
 ## Difference between `is` and `==`. 
 |**S.No**|**`is`**|**`==`**|
 |--------|--------|--------|
 |**1.**|`is` is a identity operator.|`==` is a relational operator.|
 |**2.**|`is` compares the memory address of the two operands. | `==` compares the value of the two operands.|
 |**3.**|For Example `a is b`|For Example `a == b`|
+
+# Copy:
+## Difference between deep copy and shallow copy:
+|**S.No**|**Shallow Copy**|**Deep Copy**|
+|--------|----------------|-------------|
+|**1.**|The shallow copy creates the copy of the orginal object but does not create the copy of inner object. Instead it refers the same object address|The deep copy creates the exact copy of the object including the inner object|
+|**2.**|If we change somthing using copied reference it will affect the orginal object also.|If we change something in the duplicate object it will not affect the orginal object.|
+|**3.**|The shollow copy can be achived by `slicing` and using `copy()` in copy module.|The deep copy can be achived by `deepcopy()` in copy module|
 
 # **OOPS:**
 ## General Parameters:

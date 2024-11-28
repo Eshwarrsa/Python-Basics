@@ -38,6 +38,9 @@
 |**3.**|These methods are independent of class|These methods depends on class|
 |**4.**|These method will not change anything in class|These method can change the class attributes.|
 
+# Inheritance:
+&nbsp; The process of inherting the property of one class to the another class is known as inheritance. The class which provide the property is known as super or parent class. The class which takes those property is known as sub or child class. 
+
 # Polymorphism:
 &nbsp; The process of making the same methods to behave differently according to the instance created or according to the arguments type or number of arguments is known as polymorphism. They are two types of polymorphism they are: 
 * Compile time polymorphism

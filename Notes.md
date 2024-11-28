@@ -38,6 +38,31 @@
 |**3.**|These methods are independent of class|These methods depends on class|
 |**4.**|These method will not change anything in class|These method can change the class attributes.|
 
+# Polymorphism:
+&nbsp; The process of making the same methods to behave differently according to the instance created or according to the arguments type or number of arguments is known as polymorphism. They are two types of polymorphism they are: 
+* Compile time polymorphism
+* Runtime Polymorphism
+
+## Compile time polymorphism:
+&nbsp; The process of creating method with same signature but different argument length or argument data type is known as method overloading. In python method overloading is not possible because two methods cannot have same identifier. But it can be clarrified by overloading the operators. For this we can use default arguments or Variable length arguments. 
+```py
+def func(*args):
+    # code
+
+```
+
+## Run time polymorphism:
+&nbsp; The method which has the same method signature of the parent method and it is compiled during the runtime is known as runtime polymorphism. The best example is overriding. The parent method which is implemented to child method can be overridden and change the implementation of parent class in the child class with same method name. It is possible in python. 
+```py
+class A:
+    def method():
+        # code
+
+class B:
+    def method():
+        #code
+```
+
 # **Advance Topic**
 # Decorators:
 &nbsp; Decorators are the function which give extra functionality to other function. The decorators can be used by by `@identifier`. To create a decorators we should follow some protocol. They are:

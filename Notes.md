@@ -30,6 +30,14 @@
 |**2.**|Attribute in a self changes object to object of the same class.|Attribute in cls will not change according to object to object in same class.|
 |**3.**|self is mandatory parameter for instance attribute and method.|cls is mandatory parameter for the class attribute and method.|
 
+## Difference between `@staticmethod` and `@classmethod`:
+|**S.No**|**`@staticmethod`**|**`@classmethod`**|
+|--------|-------------------|------------------|
+|**1.**|It is a decorator which adds extra functinality to method and makes those methods as static method.|It is a decorator which adds extra functionality to the method to make it as class method.|
+|**2.**|It does not take any mandatory parameter.|It takes a mandatory parameter `cls`|
+|**3.**|These methods are independent of class|These methods depends on class|
+|**4.**|These method will not change anything in class|These method can change the class attributes.|
+
 # **Advance Topic**
 # Decorators:
 &nbsp; Decorators are the function which give extra functionality to other function. The decorators can be used by by `@identifier`. To create a decorators we should follow some protocol. They are:

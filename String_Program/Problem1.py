@@ -1,13 +1,29 @@
 """
-**Write a Python function that takes a string as input and returns the string with all the vowels removed.**  
+### Problem: Reverse a String  
 
-For example:  
-Input: `"Hello World"`  
-Output: `"Hll Wrld"`
+Write a program to reverse a given string without using any built-in reverse functions.  
+The program should handle edge cases like empty strings and strings with special characters.  
+
+#### Example:
+- **Input:** `"Hello, World!"`
+- **Output:** `"!dlroW ,olleH"`
 """
-def remove_vowels(word, res = ""):
-    res = [char for char in word if char not in "aeiouAEIOU"]
-    return "".join(res)
+# Function to reverse the string
+def reverse(word):
+    # Condition to check the type of input
+    if not isinstance(word, str):
+        raise ValueError("The given data is not string type")
+    
+    # Condition to check it is empty string or just a character
+    if word == "" or len(word) == 1:
+        return word
+    
+    # To reverse the string
+    res = ""
+    for char in word:
+        res = char + res
+    
+    return res # Return type is string
 
-word = "Hello World"
-print(remove_vowels(word))
+input = "Hello, World!"
+print(reverse(input))
